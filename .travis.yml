@@ -1,10 +1,4 @@
 language: ruby
 rvm:
-- 2.2
-deploy:
-  provider: heroku
-  api_key:
-    secure: iOeCLgU53ANLm+VnC8gLwymOMymxN+Ox91wNnuCeQihePhM7Ca0YuoAMbC3VNZLrfeccgxmVnw+XxRGl7mavkRc9iCIJTB2DqPWKyr1/Sin3c5dB0X/PrvYatkLo1zhP4mvwL0s8LnqKlvQJ084mGq9gVpMv6878Z4K3Xis1b/qxHWd6gM70fdoU93W7GTgfKDg/x5lZ6GEHC5y1qq8ano3gpLJ7FxExgMGHBwSTVyRfiv9M8ER6pe13icbk6d99xudY1lP6GGiAh+sLGMRyXETC9dsF7/a24BjtYVAMk3JL9f/To0pTBe8osOm06ShFrPy9Jhk4E5JotWJo3gAOHAAMrPGWuDfsiNLnxO/t/tiU+0vJqfcru1yAagWUjPmb0s52V1bD2fmeuXwNLUSO/1MrU6gx628C56WLFjnZQjnjnxzRME0O87/N3xOuEIA/FX5Vs20CxhpeigmJCZkbGv/cySFtn5l/sCY8YeA2wQGbsWentb06F0jyE/qHx1cBNvm4JXH8cPFXF61lHKeX8a6kaAbTk/jYwdSN3yfSbLWt5W3Lcc76HLQeWfatx+rojuey7PMHTrqBkQ/cFVhyxazYe0r23w9/zlqzeXkhMJb068CO7BuY/9HMX6ScECbR6WvXk/hQSmqN7N7PBiEvQ5wImmg66zRc5ajKD0JYMZo=
-  app: young-castle-19042
-  on:
-    repo: PmRay/pizzages
+- 2.4.4
+
