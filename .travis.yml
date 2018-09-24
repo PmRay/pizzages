@@ -8,3 +8,7 @@ deploy:
   app: young-castle-19042
   on:
     repo: PmRay/pizzages
+  run: 
+    - "rake db:migrate"
+    - restart
+    - "rake cleanup"
