@@ -1,3 +1,4 @@
+env:
 language: ruby
 rvm:
 - 2.4.4
@@ -12,3 +13,15 @@ deploy:
     - "rake db:migrate"
     - restart
     - "rake cleanup"
+
+  global:
+    - CC_TEST_REPORTER_ID=2afeda855f80c2675af5946b9f8e334d16c9ca58a20afd967a1d2c8e4a2912eb
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+script:
+  - bundle exec rspec
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
